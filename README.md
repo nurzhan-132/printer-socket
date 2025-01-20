@@ -31,7 +31,7 @@ http://localhost:3000
 
 Технические детали
 
-Порт: 9100 (RAW Data).
+Порт: 9100 (RAW Data). Пример RAW Data: "^XA^BY2^BEN,70,Y,N^FD8033609249442^FS^XZ"
 
 Технологии:
 
