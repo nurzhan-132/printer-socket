@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Server</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        input,
+        textarea,
+        button {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+            width: 80%;
+            max-width: 400px;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        .message {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Print Server</h2>
+    <form method="POST" action="/send">
+        <label for="printer_ip">Printer IP:</label><br>
+        <input type="text" id="printer_ip" name="printer_ip" required><br>
+        <label for="print_data">ZPL Command:</label><br>
+        <textarea id="print_data" name="print_data" rows="5"></textarea><br>
+        <button type="submit">Send</button>
+    </form>
+
+    <div class="message"></div>
+</body>
+
+</html>
